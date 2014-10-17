@@ -44,8 +44,13 @@ public class Controller {
 							
 							int variation = Integer.parseInt(input);
 							if (variation == 1) {
-
 								game.rules = new ClassicChess();
+							} else if (variation == 2) {
+								//game.rules = new PeasantsRevoltChess();
+							}  else if (variation == 3) {
+								game.rules = new TakeAllChess();
+							}  else if (variation == 4) {
+								//game.rules = new TakeAllChess();
 							}
 							else {
 								input = null;
